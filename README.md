@@ -2,18 +2,19 @@ tutum Cookbook
 ==============
 This is as cookbook to setup docker tutum for your chef clients
 
+Tutum Agent comes with it's own docker binary, so installation of docker is not needed explitcly.
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
 
-e.g.
-#### packages
-- `toaster` - tutum needs toaster to brown your bagel.
+- Debian or Ubuntu system
+- Go to Tutum Dashboard > Nodes and click ```bring your own node```
+- Add this key into your node attributes
+- run recipe
 
 Attributes
 ----------
-TODO: List your cookbook attributes here.
+see attributes .rb 
 
 e.g.
 #### tutum::default
@@ -35,19 +36,14 @@ e.g.
 Usage
 -----
 #### tutum::default
-TODO: Write usage instructions for each cookbook.
+The default cookbook includes tumtum-agent at the moment
 
-e.g.
-Just include `tutum` in your node's `run_list`:
+#### tutum::agent
+Installs the tumtum-agent from the repository
 
-```json
-{
-  "name":"my_node",
-  "run_list": [
-    "recipe[tutum]"
-  ]
-}
-```
+TODO
+----
+- add tutum-cli method with username and password to extract the auth key
 
 Contributing
 ------------

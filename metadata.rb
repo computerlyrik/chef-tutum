@@ -6,7 +6,7 @@ description      'Installs/Configures tutum'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
 
-supports ['debian', 'ubuntu']
+supports ['debian', 'ubuntu', "centos"]
 
 depends 'apt'
 depends 'yum'
