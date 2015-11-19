@@ -1,9 +1,7 @@
 tutum Cookbook
 ==============
-TODO: Enter the cookbook description here.
+This is as cookbook to setup docker tutum for your chef clients
 
-e.g.
-This cookbook makes your favorite breakfast sandwich.
 
 Requirements
 ------------
